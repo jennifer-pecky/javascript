@@ -1,0 +1,172 @@
+body {
+    height: 100vh;
+    background-color: grey;
+    /* overflow: hidden; */
+}
+
+.nav {
+    display: flex;
+    align-items: center;
+    height: 10vh;
+    justify-content: space-between;
+    /* padding: 0px 30px; */
+}
+
+.classy {
+    display: flex;
+}
+
+.bi-exclamation-circle {
+    color: red;
+    font-size: 2rem;
+}
+
+.boot {
+    background-color: darkgrey;
+    border-radius: 100px;
+    border: none;
+    width: 60px;
+    height: 60px;
+    position: relative;
+}
+
+.boot:hover {
+    background-color: rgb(97, 93, 93);
+    color: black;
+}
+
+.boot::after {
+    content: "Delete Account";
+    display: none;
+    position: absolute;
+    right: 100%;
+    bottom: 12px;
+    padding: 10px;
+    background-color: #f1f1f1;
+    border: 1px solid #ccc;
+    white-space: nowrap;
+}
+
+.boot:hover::after {
+    display: block;
+}
+
+.flex {
+    display: flex;
+    justify-content: end;
+    padding-right: 10px;
+    margin-top: -80px;
+}
+
+.sidebar {
+    height: 100vh;
+    background-color: black;
+    color: white;
+    width: 0px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    overflow-x: hidden;
+    transition: 1s;
+}
+
+.sidebar nav {
+    margin-left: 20px;
+}
+
+#menu,
+#cancel {
+    border: none;
+    background: transparent;
+    font-size: 35px;
+    font-weight: 900;
+}
+
+.cancelDiv {
+    display: flex;
+    justify-content: flex-end;
+    padding: 20px;
+}
+
+#cancel {
+    color: white;
+}
+
+.btnDiv button {
+    height: 6vh;
+    background-color: black;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    margin: 0px 10px;
+}
+
+#logout {
+    height: 6vh;
+    background-color: black;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    margin: 0px 10px;
+}
+
+#body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 90vh;
+}
+
+#events {
+    height: 200px;
+    width: 200px;
+    border: 1px solid black;
+}
+
+#input {
+    padding: 15px 120px;
+    outline: none;
+    border: none;
+    background-color: whitesmoke;
+}
+
+#button {
+    padding: 15px 40px;
+    border: none;
+    margin-left: -4px;
+    background-color: black;
+    color: white;
+}
+
+#todo {
+    overflow-x: auto;
+    height: 40vh;
+    margin-top: 20px;
+}
+
+#todo div {
+    display: flex;
+    width: 54vw;
+    height: 7vh;
+    align-items: center;
+    justify-content: space-between;
+    background-color: black;
+    color: white;
+    margin-top: 10px;
+}
+
+#todo button {
+    height: 7vh;
+    padding: 0px 10px;
+    border: none;
+}
+
+#todo h1 {
+    margin-left: 5px;
+}
+
+.fixed {
+    position: fixed;
+    width: 100%;
+}
