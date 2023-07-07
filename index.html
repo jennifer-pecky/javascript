@@ -48,12 +48,24 @@
 
         <div id="todo"></div>
 
+        <div class="modal">
+            <div class="delModal">
+                <h3>Are you sure you want to delete this account?</h3>
+                <div class="optionDiv">
+                    <button class="option" onclick="deleteUser()">Yes</button>
+                    <button class="option" onclick="removeModal()">No</button>
+                </div>
+            </div>
+        </div>
     </div>
 
     <div class="flex">
-        <button class="boot">
-            <i class="bi bi-exclamation-circle"></i>
-        </button>
+        <div class=" danger">
+            <div class="dropdown-content" onclick="displayModal()">
+                <p style="color:red">Delete account</p>
+            </div>
+            <button><i class="bi bi-exclamation-circle" style="color: red;"></i></button>
+        </div>
     </div>
 
     <script src="dom.js"></script>

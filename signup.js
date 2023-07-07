@@ -3,7 +3,6 @@ let button = document.getElementById("button");
 button.addEventListener("click", function (e) {
     e.preventDefault();
     let name = document.getElementById("name");
-    let trimName = name.value.split(" ").join("");
     let email = document.getElementById("email");
     let password = document.getElementById("password");
     let phone = document.getElementById("phone");
@@ -18,6 +17,7 @@ button.addEventListener("click", function (e) {
     let smallEmail = document.getElementById("smallEmail");
     let smallPassword = document.getElementById("smallPassword");
     let smallCheck = document.getElementById("smallCheck");
+    let trimName = name.value.split(" ").join("");
     // let exists = document.getElementById("exists")
 
 
@@ -46,7 +46,7 @@ button.addEventListener("click", function (e) {
             }, 5000);
         } else if (phone.value.length !== 11 && ("+" + phone.value).length !== 14) {
             smallPhone.style.display = "block";
-            phone.style.border = "1px solid black";
+            phone.style.border = "1px solid red";
             setTimeout(() => {
                 smallPhone.style.display = "none";
                 phone.style.border = "1px solid black";

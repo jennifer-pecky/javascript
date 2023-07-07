@@ -8,7 +8,22 @@ let clear = document.getElementById("clear");
 let menu = document.getElementById("menu");
 let sidebar = document.getElementById("sidebar");
 let cancel = document.getElementById("cancel");
+let modal = document.querySelector(".modal")
 
+function displayModal() {
+    modal.style.display = "flex";
+}
+
+function removeModal() {
+    modal.style.display = "none";
+}
+
+const deleteUser = () => {
+    localStorage.clear();
+    setTimeout(() => {
+        window.location.replace("http://127.0.0.1:5501/signin.html")
+    }, 3000);
+}
 
 window.addEventListener("scroll", function () {
     let nav = document.querySelector(".nav");

@@ -170,3 +170,127 @@ body {
     position: fixed;
     width: 100%;
 }
+
+
+.hov .div {
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 10px;
+    margin-top: -80px;
+
+}
+
+i {
+    color: red;
+}
+
+.empty {
+    display: flex;
+    height: 30px;
+    width: 30px;
+    /* border: 1px solid white; */
+    border-radius: 50px;
+    align-items: center;
+    justify-content: center;
+    background-color: gainsboro;
+
+}
+
+.div :hover {
+    background-color: lightslategray;
+}
+
+.text {
+    visibility: hidden;
+    background-color: white;
+    padding: 5px 10px;
+    border-radius: 3px;
+}
+
+.div:hover .text {
+    visibility: visible;
+    display: flex;
+    opacity: 1;
+}
+
+.modal {
+    height: 100vh;
+    width: 100%;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.639);
+}
+
+.delModal {
+    width: 30%;
+    height: 30vh;
+    background-color: gray;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.optionDiv {
+    height: 18vh;
+    display: flex;
+    width: 30vw;
+    align-items: end;
+    justify-content: space-around;
+    border-top: 1px solid black;
+}
+
+
+.option {
+    height: 40px;
+    width: 100px;
+    margin-bottom: 10px;
+    background-color: black;
+    color: white;
+    border: none;
+    transition: 0.5s;
+}
+
+.option:hover {
+    opacity: 0.8;
+}
+
+flex {
+    display: flex;
+    justify-content: end;
+}
+
+.danger {
+    display: flex;
+    align-items: center;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.danger button {
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    background-color: rgb(161, 159, 159);
+    border: none;
+}
+
+.dropdown-content {
+    display: none;
+    height: 30px;
+    align-items: center;
+    justify-content: center;
+}
+
+.danger button:hover {
+    background-color: rgb(32, 21, 21);
+    transition: 1s;
+}
+
+.danger:hover .dropdown-content {
+    display: flex;
+    color: black;
+    background-color: white;
+}

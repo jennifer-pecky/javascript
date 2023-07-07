@@ -16,12 +16,17 @@
                 <div>
                     <label>Email:</label><br />
                     <input class="input" type="email" id="email" />
+                    <small id="EmailErr" style="display: none; color: red;">email is incorrect</small>
+                    <small id="emailErr" style="display: none; color: red;">email dose not exist</small>
                 </div>
                 <p id="error" style="color: red; display: none;">email and password is not correct</p>
                 <div>
                     <label>Password:</label><br />
                     <input class="input" type="password" id="password" />
+                    <small id="passwordErr" style="display: none; color: red;">password is incorrect</small>
                 </div>
+                <a href="" style="display: flex; justify-content: end;">Forgotten password?</a>
+
                 <button id="button" onclick="click">Sign in</button>
                 <p style="text-align: right">
                     Don't have an account <a href="signin.html">Signup</a>
