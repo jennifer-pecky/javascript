@@ -4,6 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="forgot.css">
     <title>Document</title>
 </head>
 
@@ -11,27 +12,32 @@
     <main>
         <div class="formDiv">
             <form name="form">
-                <h3 style="text-align: center">SIGN UP</h3>
+                <h3 style="text-align: center">RESET PASSWORD</h3>
                 <div>
-                    <label>Email:</label><br />
+                    <label for="email">Email:</label><br />
                     <input class="input" type="email" id="email" />
-                    <small id="smallEmail" style="display: none; color: red">Enter a valid email!</small>
-                </div>
+                    <small id="smallEmail" style="display: none; color: red">Email is incorrect</small>
 
-                <div>
-                    <label>Password:</label><br />
-                    <input class="input" type="password" id="password" />
-                    <small id="smallPassword" style="display: none; color: red">Password must be up to 8
-                        characters</small>
                 </div>
-                <button onclick="click" id="button">Submit</button>
-                <p style="color: red; display: none;" id="exists">This email already exist</p>
-                <p style="text-align: right">
-                    Already a User <a href="login.html">Login</a>
-                </p>
+                <div style="display: flex;">
+                    <div>
+                        <label for="password">Password:</label><br />
+                        <input class="input" type="password" id="password" />
+                        <small id="smallPassword" style="display: none; color: red">Password must be up to 8
+                            characters</small>
+                    </div>
+                    <div>
+                        <label for="password">Confirm Password:</label><br />
+                        <input class="input" type="password" id="conPassword" />
+                        <small id="confirmPass" style="display: none; color: red">Password must be up to 8
+                            characters</small>
+                    </div>
+                </div>
+                <button onclick="click" id="button">Confirm Password</button>
             </form>
         </div>
     </main>
+    <script src="forgot.js"></script>
 </body>
 
 </html>

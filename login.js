@@ -20,18 +20,21 @@ button.addEventListener("click", function (e) {
         setTimeout(() => {
             email.style.border = "1px solid black";
             password.style.border = "1px solid black";
+            error.style.border = "none";
         }, 5000);
     } else if (userEmail !== email.value) {
         emailErr.style.display = "block";
         email.style.border = "1px solid red";
         setTimeout(() => {
             email.style.border = "1px solid black";
+            emailErr.style.display = "none";
         }, 5000);
     } else if (!email.value.match(emailPattern)) {
         EmailErr.style.display = "block";
         email.display.border = "1px solid red";
         setTimeout(() => {
             email.style.border = "1px solid black";
+            EmailErr.style.display = "none";
         }, 5000);
 
     } else if (userPassword !== password.value) {
@@ -39,6 +42,8 @@ button.addEventListener("click", function (e) {
         password.style.border = "ipx solid green";
         setTimeout(() => {
             password.style.border = "1px solid black";
+            passwordErr.style.display = "none";
+
         }, 1000);
     } else {
         setTimeout(() => {
