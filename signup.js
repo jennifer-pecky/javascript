@@ -81,7 +81,7 @@ button.addEventListener("click", function (e) {
                 }
             }
 
-            window.location.replace("http://127.0.0.1:5501/index.html")
+            window.location.replace("http://127.0.0.1:5501/todo.html")
         }
     }
 });
