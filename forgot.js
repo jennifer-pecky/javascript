@@ -28,7 +28,15 @@ button.addEventListener("click", function (e) {
         email.style.border = "1px solid red";
         setTimeout(() => {
             smallEmail.style.display = "none";
-            email.style.border = "1px solid black"
+            email.style.border = "1px solid black";
+        }, 3000);
+    } else if (password.value !== confirmPassword.value) {
+        confirmPass.innerHTML = "Password dose not tally";
+        confirmPass.style.display = "block";
+        conPassword.style.border = "1px solid red";
+        setTimeout(() => {
+            confirmPass.style.display = "none";
+            conPassword.style.border = "1px solid black";
         }, 3000);
     }
 
